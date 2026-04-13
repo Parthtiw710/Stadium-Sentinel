@@ -1,0 +1,19 @@
+# Go artifacts
+sentinel
+*.db
+
+# Dashboard source (built files are copied separately by Dockerfile stages)
+dashboard/node_modules/
+dashboard/.vite/
+
+# Go vendored source (copied explicitly)
+# (keep vendor/ since we use go mod vendor)
+
+# Git
+.git/
+.gitignore
+
+# Misc
+*.log
+.DS_Store
+README.md

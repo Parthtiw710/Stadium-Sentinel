@@ -1,0 +1,26 @@
+# Binaries
+sentinel
+sentinel.exe
+*.exe
+*.bin
+
+# Databases
+*.db
+*.db-shm
+*.db-wal
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+dashboard/dist/
+cmd/sentinel/dashboard/dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
