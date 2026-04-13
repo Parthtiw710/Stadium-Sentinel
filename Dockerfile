@@ -28,10 +28,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends libsqlite3-dev 
 COPY go.mod go.sum ./
 RUN go mod download
 
-# Copy Go source
-COPY cmd/    ./cmd/
-COPY internal/ ./internal/
-COPY vendor/ ./vendor/
+# Copy entire Go project structure
+COPY . .
 
 # Copy the built React dist into the correct embed path
 COPY --from=react-builder /app/dashboard/dist ./cmd/sentinel/dashboard/dist
