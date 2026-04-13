@@ -16,9 +16,13 @@ RUN npm run build
 # ──────────────────────────────────────────────
 # Stage 2: Build Go Binary (with CGO for SQLite)
 # ──────────────────────────────────────────────
-FROM golang:1.23-bookworm AS go-builder
+FROM golang:1.26-bookworm AS go-builder
 
 WORKDIR /app
+
+# Install build dependencies for CGO (SQLite)
+RUN apt-get update && apt-get install -y --no-install-recommends libsqlite3-dev && \
+    rm -rf /var/lib/apt/lists/*
 
 # Pre-download modules (cached layer)
 COPY go.mod go.sum ./

@@ -24,8 +24,8 @@ Stadium Sentinel is a high-performance, LLM-driven monitoring and automated reco
 ## 🚦 Quick Start
 
 ### 1. Requirements
-- Go 1.23+
-- Node.js 20+
+- Go 1.26+
+- Node.js 24+
 - A Google API Key (`GOOGLE_API_KEY`)
 
 ### 2. Run Locally
