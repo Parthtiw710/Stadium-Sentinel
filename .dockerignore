@@ -1,5 +1,5 @@
 # Go artifacts
-sentinel
+/sentinel
 *.db
 
 # Dashboard source (built files are copied separately by Dockerfile stages)
