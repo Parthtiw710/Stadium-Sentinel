@@ -1,6 +1,6 @@
 # Binaries
-sentinel
-sentinel.exe
+/sentinel
+/sentinel.exe
 *.exe
 *.bin
 
